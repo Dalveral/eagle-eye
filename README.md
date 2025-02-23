@@ -1,7 +1,7 @@
-'''bash
+```bash
 go build main.go
-'''
+```
 
-'''bash
+```bach
 ./main
-'''
+```
