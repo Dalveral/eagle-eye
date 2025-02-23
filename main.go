@@ -21,4 +21,6 @@ func main() {
 		executor.ExecuteCommand("mkdir", []string{newPath})
 	}
 
+	executor.ExecuteCommand("defaults", []string{"write", "com.apple.screencapture", "location", newPath})
+	executor.ExecuteCommand("killall", []string{"SystemUIServer"})
 }
